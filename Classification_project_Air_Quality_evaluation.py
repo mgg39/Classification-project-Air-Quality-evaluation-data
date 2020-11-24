@@ -16,7 +16,7 @@ control_data = pd.read_csv("air_quality_test.csv")
 print(train_data.info())
 #printing class distribution
 print(Counter(train_data["Air_Quality"]))
-#extractinf features and column labels
+#extracting features and column labels
 x_train = train_data[['PM2.5', 'PM10', 'NO', 'NO2', 'NOx', 'NH3', 'CO', 'SO2', 'O3', 'Benzene', 'Toluene', 'Xylene', 'AQI']]
 y_train = train_data["Air_Quality"]
 x_control = test_data[['PM2.5', 'PM10', 'NO', 'NO2', 'NOx', 'NH3', 'CO', 'SO2', 'O3', 'Benzene', 'Toluene', 'Xylene', 'AQI']]
